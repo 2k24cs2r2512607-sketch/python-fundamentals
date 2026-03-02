@@ -1,3 +1,7 @@
+#Time Complexity - Average Case - O(nlogn)
+#Space Complexity - Average Case - O(logn) - Due to recursive Call
+#Time Complexity - Worst Case - O(n^n) - (if data is sorted in ascending or descending order)
+#Space Complexity - Worst Case - O(n)
 def quick_sort(arr,start,end):
     if start >= end:
         return
@@ -15,6 +19,6 @@ def partition(arr,start,end):
             pos += 1
     return pos-1
 
-arr = [23,242,1,12,3]
+arr = [6,5,4,3,2,1]
 quick_sort(arr,0,len(arr)-1)
 print(arr)
